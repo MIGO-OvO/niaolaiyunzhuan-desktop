@@ -1,6 +1,7 @@
 use std::{error::Error, time::Duration};
 use tauri_plugin_updater::UpdaterExt;
 
+// 标准 bin 目标会嵌入 Tauri 的 Common Controls v6 清单和图标资源。
 // 发布后验证真实更新端点与官方插件；仅下载和校验，不启动安装器。
 fn main() -> Result<(), Box<dyn Error>> {
     let mut context = tauri::generate_context!();

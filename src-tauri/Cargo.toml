@@ -19,8 +19,9 @@ name = "niaolaiyunzhuan"
 path = "src/main.rs"
 required-features = ["desktop"]
 
-[[example]]
+[[bin]]
 name = "check-updater"
+path = "src/bin/check-updater.rs"
 required-features = ["desktop"]
 
 [build-dependencies]
