@@ -46,6 +46,7 @@ Rust + Tauri 2 + React + TypeScript，由用户指定并确认。
 基线提交：`8a88ea6c8532f1f67d51660bbb1dd46850af9f18`，网页版 v1.5.0，数据修订 73。
 该快照含 128 条来源、207 个独立勾选目标；过期条目保留在数据中，按规则隐藏。
 上游包含第三方二维码组件的许可声明，未发现覆盖整个项目的独立 LICENSE 文件。
+桌面版采用 [PolyForm Noncommercial 1.0.0](./LICENSE)。
 
 ## Product Principles
 

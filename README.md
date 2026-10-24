@@ -4,7 +4,7 @@
 [![Checks](https://github.com/MIGO-OvO/niaolaiyunzhuan-desktop/actions/workflows/ci.yml/badge.svg)](https://github.com/MIGO-OvO/niaolaiyunzhuan-desktop/actions/workflows/ci.yml)
 [![Tauri 2](https://img.shields.io/badge/Tauri-2-24C8DB?logo=tauri&logoColor=white)](https://v2.tauri.app/)
 [![Windows x64](https://img.shields.io/badge/Windows-10%2F11%20x64-0078D4)](https://github.com/MIGO-OvO/niaolaiyunzhuan-desktop/releases/latest)
-[![License status](https://img.shields.io/badge/License-Not%20declared-lightgrey)](./docs/LICENSING.md)
+[![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/License-PolyForm%20Noncommercial%201.0.0-lightgrey)](./LICENSE)
 
 《燕云十六声》袅袅之音获取记录与查漏工具，使用 Rust、Tauri 2、React 和 TypeScript 开发。
 原作者：**薄荷小鹿（燕云十六声）**，数据来自 [niaolaiyunzhuan-web](https://github.com/MiaTheamateur/niaolaiyunzhuan-web)。
@@ -147,8 +147,11 @@ PNG 的密度元数据约为 **300 DPI**，保留原始像素数据。
 
 ## 来源与许可
 
-本项目沿用[原项目](https://github.com/MiaTheamateur/niaolaiyunzhuan-web)的许可状态：
-**上游尚未声明项目级开源许可证**，本仓库公开源码并保留原作者署名。
+本项目采用 [PolyForm Noncommercial 1.0.0](./LICENSE)，允许协议规定的非商业使用、修改和分发。
+商业用途需另行获得权利人的授权。分发时须附上许可全文或链接，并保留许可要求的声明。
+
+桌面版保留[原项目](https://github.com/MiaTheamateur/niaolaiyunzhuan-web)及原作者薄荷小鹿（燕云十六声）的署名和数据来源。
+本仓库的许可声明适用于桌面版；上游仓库的许可由原作者声明。
 
 上游的 [THIRD_PARTY_LICENSES.js](./THIRD_PARTY_LICENSES.js) 说明二维码组件的 MIT、Apache-2.0 许可，
 其适用范围是对应第三方组件。字体及本项目使用的依赖分别遵循各自许可，详见

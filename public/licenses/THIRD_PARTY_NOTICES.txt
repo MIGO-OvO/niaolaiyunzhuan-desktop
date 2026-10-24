@@ -2,7 +2,9 @@ Third-party notices for 袅来运转桌面版
 
 Original project: https://github.com/MiaTheamateur/niaolaiyunzhuan-web
 Original author: 薄荷小鹿（燕云十六声）
-Project-level license: not declared by upstream.
+Desktop project license: PolyForm-Noncommercial-1.0.0
+License text: https://polyformproject.org/licenses/noncommercial/1.0.0
+Upstream project-level license: not declared.
 
 
 ========================================================================

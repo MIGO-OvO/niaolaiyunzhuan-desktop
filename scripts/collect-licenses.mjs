@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 
-const sections = ['Third-party notices for 袅来运转桌面版\n\nOriginal project: https://github.com/MiaTheamateur/niaolaiyunzhuan-web\nOriginal author: 薄荷小鹿（燕云十六声）\nProject-level license: not declared by upstream.\n'];
+const sections = ['Third-party notices for 袅来运转桌面版\n\nOriginal project: https://github.com/MiaTheamateur/niaolaiyunzhuan-web\nOriginal author: 薄荷小鹿（燕云十六声）\nDesktop project license: PolyForm-Noncommercial-1.0.0\nLicense text: https://polyformproject.org/licenses/noncommercial/1.0.0\nUpstream project-level license: not declared.\n'];
 const missing = [];
 function collect(name, version, license, directory, licenseFile) {
   const files = new Set(readdirSync(directory).filter(file =>
