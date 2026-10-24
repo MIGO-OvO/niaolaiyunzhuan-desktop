@@ -1,0 +1,45 @@
+[package]
+name = "niaolaiyunzhuan"
+version = "1.5.0"
+edition = "2021"
+description = "袅来运转 Windows 桌面版"
+publish = false
+default-run = "niaolaiyunzhuan"
+
+[lib]
+name = "niaolaiyunzhuan_lib"
+path = "src/lib.rs"
+
+[features]
+default = ["desktop"]
+desktop = ["dep:tauri", "dep:tauri-build", "dep:tauri-plugin-dialog", "dep:tauri-plugin-single-instance", "dep:tauri-plugin-updater"]
+
+[[bin]]
+name = "niaolaiyunzhuan"
+path = "src/main.rs"
+required-features = ["desktop"]
+
+[[example]]
+name = "check-updater"
+required-features = ["desktop"]
+
+[build-dependencies]
+tauri-build = { version = "2", optional = true, features = [] }
+
+[dependencies]
+tauri = { version = "2", optional = true, features = [] }
+tauri-plugin-dialog = { version = "2", optional = true }
+tauri-plugin-single-instance = { version = "2", optional = true }
+tauri-plugin-updater = { version = "2.14", optional = true }
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tempfile = "3"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+qrcode = { version = "0.14", default-features = false }
+rqrr = "0.10"
+
+[dev-dependencies]
+base64 = "0.22"
+minisign-verify = "0.3"
+

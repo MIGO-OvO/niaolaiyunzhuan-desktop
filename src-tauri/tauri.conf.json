@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "袅来运转",
+  "version": "1.5.0",
+  "identifier": "com.niaolaiyunzhuan.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "袅来运转",
+        "width": 1440,
+        "height": 960,
+        "minWidth": 1080,
+        "minHeight": 700,
+        "center": true,
+        "decorations": false,
+        "backgroundColor": "#F6F1E8"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' asset: data:; font-src 'self'; connect-src ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis"
+    ],
+    "icon": [
+      "icons/icon.ico",
+      "icons/icon.png"
+    ],
+    "shortDescription": "燕云十六声袅袅之音获取记录与查漏工具",
+    "copyright": "原作者：薄荷小鹿（燕云十六声）",
+    "windows": {
+      "nsis": {
+        "languages": [
+          "SimpChinese"
+        ],
+        "displayLanguageSelector": false
+      },
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper",
+        "silent": true
+      }
+    },
+    "createUpdaterArtifacts": true
+  },
+  "plugins": {
+    "updater": {
+      "requireSignedVersion": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDk3MTc3RUE3NjVFRjhFNUUKUldSZWp1OWxwMzRYbC9oTGlBaEo5SzVGcHkrTHBXN1JEbWpoZ05wbHF2czR3OGpCWnhKeVdtakUK",
+      "endpoints": [
+        "https://github.com/MIGO-OvO/niaolaiyunzhuan-desktop/releases/latest/download/latest.json"
+      ],
+      "windows": {
+        "installMode": "passive"
+      }
+    }
+  }
+}

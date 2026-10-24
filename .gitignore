@@ -1,0 +1,15 @@
+/target/
+/src-tauri/target/
+/node_modules/
+/dist/
+/.local/
+/src-tauri/gen/
+*.tsbuildinfo
+/.impeccable/
+*.key
+*.key.pub
+*.pfx
+*.p12
+.env
+.env.*
+*.log
